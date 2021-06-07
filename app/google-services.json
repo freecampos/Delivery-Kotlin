@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "40303826231",
+    "project_id": "finaldanielcampos",
+    "storage_bucket": "finaldanielcampos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:40303826231:android:4082502dd88b2affb6f6b2",
+        "android_client_info": {
+          "package_name": "com.danielcampos.delivery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "40303826231-mlt71udtiai03n9q5d6n1085v2t1g24i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2bO6V2xowt-PqHVJBiahfs0KDj_YfKmo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "40303826231-mlt71udtiai03n9q5d6n1085v2t1g24i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

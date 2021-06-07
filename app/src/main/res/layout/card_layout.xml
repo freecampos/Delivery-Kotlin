@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="isPedidos"
+            type="com.danielcampos.delivery.modelo.pedido" />
+    </data>
+
+<androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    card_view:cardBackgroundColor="@color/colorPrimaryDark"
+    card_view:cardCornerRadius="20dp"
+    card_view:cardElevation="6dp"
+    card_view:contentPadding="4dp">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        /*Número de envio*/
+
+        <TextView
+            android:id="@+id/numEnvioTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Núm. Envío: "
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/numEnvio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/numEnvioTextView"
+            android:text="@{isPedidos.id}"
+            android:textColor="@color/white" />
+        /*Dirección*/
+
+        <TextView
+            android:id="@+id/direccionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/numEnvioTextView"
+            android:text="Dirección: "
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/direccionCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/numEnvio"
+            android:layout_toRightOf="@+id/direccionTextView"
+            android:text="@{isPedidos.direccion}"
+            android:textColor="@color/white" />
+
+        /*Población*/
+
+        <TextView
+            android:id="@+id/poblacionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/direccionTextView"
+            android:text="Población: "
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/poblacionCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/direccionCliente"
+            android:layout_toRightOf="@+id/poblacionTextView"
+            android:text="@{isPedidos.poblacion}"
+            android:textColor="@color/white" />
+
+        /*Cliente*/
+
+        <TextView
+            android:id="@+id/clienteTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/poblacionTextView"
+            android:text="Cliente: "
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/poblacionCliente"
+            android:layout_toRightOf="@+id/poblacionTextView"
+            android:text="@{isPedidos.nombreCliente}"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
+</layout>
